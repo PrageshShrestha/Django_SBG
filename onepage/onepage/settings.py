@@ -51,7 +51,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoise.Middleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -94,7 +95,7 @@ WSGI_APPLICATION = 'onepage.wsgi.application'
 #}
 DATABASES = {
     'default':{
-        'ENGINE':'django.db.backends.mysql',
+        'ENGINE':'django.db.backends.sqlite3',
         'NAME':'new_db',
         'USER':'root',
         'PASSWORD':'',
