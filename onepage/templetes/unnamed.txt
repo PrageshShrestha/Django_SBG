@@ -1,0 +1,814 @@
+
+<!-- {% include "head.html" %}
+{% load static %}
+{% comment %} {% load hitcount_tags %} {% endcomment %}
+<title>{{English.title}} </title>
+
+
+
+<body>
+    <!--Login box  <div class="notifications">
+        <i class="fas fa-bell fa-2x"></i>
+
+    </div>
+    <div class="login_box">Didnt Logged in <br>Yet?</div>
+    <div class="login_userinfo">
+         <div class="login">
+            
+            <a href="1/"> <i class="fa-solid fa-bed"></i>Login</a>
+          
+         </div>
+         {% if i.logged %}
+         <div class="user_info">
+          <p>User Info</p>  <i class="fa-solid fa-user-check"></i>
+         </div>
+         {% endif %}
+    </div>-->
+
+<div id="mainbody">
+        
+        <div class='info_new_class'>
+            <img src="{% static 'media/location.png' %}" alt='no images found'>
+           <br>
+           <b>Find us</b>
+           <p>Durga Mandir ko pachim patti</p>
+           <p>Approximately 300m from Main Road</p>
+           <a href='https://en.wikipedia.org/wiki/Lalbandi' class="address">Lalbandi-7,Sarlahi</a>  <br> <br>
+           <!-- <a href='#'><b>Questions? Chat with us (Click here)</b></a> -->
+           
+          
+            
+
+        </div>
+        <div class="second_para">
+            
+            <div id="home" class="templetes">
+
+                <div class="midguard">{{English.Found}}<p class="info_page">{{English.found_name}}</p>
+                </div>
+                <div class="second_for_first"><img src="{% static 'media/Picture/image4.jpg' %}" alt="no image found">
+                    <p>{{English.topic_sentence}}
+                        <div>{{English.highlight}}</div>
+                    </p>
+                </div>
+                <div class="img_com">
+
+                    <p>{{English.More_pics}}-></p>
+                    <div class="other_img">
+                        <img src="{% static 'media/Picture/image2.jpg' %}" alt="">
+                        <img src="{% static 'media/Picture/image5.jpg' %}" alt="">
+
+                        <img src="{% static 'media/Picture/image11.jpg' %}" alt="">
+
+                        <img src="{% static 'media/Picture/image14.jpg' %}" alt="">
+                        <img src="{% static 'media/Picture/image3.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="templetes" id="features">
+                <!--<div class="second_heading">-->
+                <b>{{English.Features}}</b><br>
+                <p class="info_page">{{English.fe1}}<br>{{English.fe2}}</p>
+                <div class="container">{{English.Feature1}} <br>
+                    <div class="secondtext">{{English.f1}}</div>
+                </div>
+                <div class="container">{{English.Feature2}}<br>
+                    <div class="secondtext">{{English.f2}}</div>
+                </div>
+                <div class="container">{{English.Feature3}} <br>
+                    <div class="secondtext">{{English.f3}}</div>
+                </div>
+                <div class="container">{{English.Feature4}}<br>
+                    <div class="secondtext">{{English.f4}}</div>
+                </div>
+                <div class="container">{{English.Feature5}} <br>
+                    <div class="secondtext"> {{English.f5}}</div>
+                </div>
+                <!--</div>-->
+            </div>
+           
+
+            <div class="templetes" id="contacts">
+                <div class="main_contact">
+                    <div class="main_contact1">
+                        <div class="contact_page">
+                            <i class="fa-solid fa-mobile fa-10x"></i><br>
+                            <a href="tel:9844053689">{{English.number1}}</a><br>
+                            <a href="tel:9801606601">{{English.number2}}</a>
+                        </div>
+
+
+                    </div>
+                    <div class="main_contact1">
+                        <div class="contact_page">
+                            <i class="fa-brands fa-facebook-f fa-10x"></i><br>
+                            <a href="https://www.facebook.com/groups/323502255544113">{{English.profile}}</a>
+                        </div>
+                        <div class="contact_page">
+                            <i class="fa-solid fa-user fa-10x"></i><br>
+                            <a href="">{{English.found_name}}</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            {% comment %} <div class="templetes"> {% endcomment %}
+                 {% comment %} <form action="" method="POST">{% csrf_token %}
+                    {{total_comments}} {{English.comments}}
+                    
+
+
+                        <img src="" alt="">
+
+
+                        {% if hello.logged %}
+                        {{ hello.name}}
+                        {% else %}
+                        User
+                        {% endif %} <br>
+                       
+                                 
+                </form> {% endcomment %}
+            {% comment %} </div> {% endcomment %}
+
+
+        </div>
+    </div>
+    </div>
+    
+    </div>
+
+</body>
+</html>    
+from here css
+
+html{
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+
+
+}
+*{
+    margin:0;
+    padding:0;
+    
+    cursor: pointer;
+    scroll-behavior: smooth;
+
+    font-size:large;
+}
+#mainbody{
+    display:inline-flex;
+    
+}
+.info_new_class{
+    width:650px;
+    height:auto;
+    color:white;
+    position:absolute;
+    top:20vh;
+    left:790px;
+    z-index:-2;
+
+}
+
+.info_new_class img{
+    width:100%;
+    height:450px;
+}
+body{
+    width:1340px;
+    height:750px;
+    background: rgb(13, 16, 49);
+
+    
+}
+.opinion{
+    background-color:rgb(13, 16, 49);
+    border-bottom: 1px inset white;
+    width:80%;
+    padding-left:3%;
+    color:white;
+}
+.class_comments{
+    width:100%;
+    height:30vh;
+    overflow-y:scroll;
+    -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+    padding-left:4%;
+    margin-top:2vh;
+    background-color:rgb(32, 32, 72);
+
+    
+}
+.class_comments p{
+    color:rgb(165, 154, 154);
+    word-spacing:0px;
+    letter-spacing:0px;
+    margin-left:1%;
+    border-bottom:1px inset rgb(92, 89, 89);
+}
+.class_comments:hover{
+    height:auto;
+    
+}
+a:hover{
+    text-decoration:none;
+}
+.first_para{
+    width:1340px;
+
+    position:fixed;
+    height:75px;
+    color:white;
+    z-index:5;
+    top:0;
+    display : inline-flex;
+    background:rgb(13, 16, 49);
+    
+
+
+}
+.first_para button{
+    outline:none;
+    border:none;
+}
+.refrigerator{
+    width:100%;
+    height:100%;
+    margin-left:10px;
+    display:inline-flex;
+    padding:auto;
+
+
+}
+.link_pages{
+    width:auto;
+    
+    transition:0.5s;
+    margin-top:30px;
+    margin-left:5%;
+    display:inline-flex;
+   
+}
+.link_pages:active{
+    outline:none;
+    border:none;
+}
+.link_pages:hover , .link_pages:active{
+    color:yellow;
+    transform:scale(1.1);
+}
+
+
+
+.first_para img{
+    height:78px;
+    width:20%;
+    margin-left:0.5%;
+    margin-top:0.5%;
+    margin-bottom:2%;
+    overflow:hidden;
+}
+.language:hover{
+    color:yellow;
+}
+
+.second_para{
+    width:725px;
+    height:750px;
+    margin-left:2%;
+    margin-top:15vh;
+    color: white;
+   
+    
+}
+.info{
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    margin-top:2%;
+    margin-left:1%;
+    height:50vh;
+  
+    
+}
+.marquee{
+ width:15%;
+ margin-left:2.5%;
+ position:absolute;
+}
+.templetes{
+    width: 100%;
+    max-height: 2250px;
+    height:auto;
+    margin-bottom: 15px;
+    transition-duration: 1s;
+   border-bottom: 2px inset white;
+
+    
+}
+.midguard{
+    margin-left:469px ;
+}
+.info_page{
+    color: rgb(182, 180, 177);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.second_for_first{
+    width:650px;
+    
+    
+}
+.second_for_first img{
+    width:100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height:710px;
+
+
+}
+.second_for_first p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: rgb(182, 180, 177);
+    padding-top:10%;
+
+}
+.second_for_first div{
+    margin-left: 40%;
+}
+.other_img{
+    display: inline-flex;
+    height:282px;
+    padding:10px;
+    width: 100%;
+    background-color: whitesmoke;
+    overflow-x:scroll; 
+    background:rgba(0,0,0,0.5);
+    transition:0.8s;
+}
+
+.other_img img{
+    border:1px inset black;
+    margin-left:5px;
+    width:297px;
+    height:245px;
+    
+}
+
+.other_image{
+    width:30%;
+    height:100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: black;
+    margin-left:3.33%;
+}
+.templetes img{
+    background-color: none;
+}
+i{
+    
+    margin-right:4%;
+}
+#contacts{
+    height:auto;
+}
+
+.main_contact{
+    width:96%;
+    height:100%;
+    color: white;
+    
+}
+.main_contact1{
+    display: inline-flex;
+    width:100%;
+    height:50%;
+      
+    margin-left:30px;
+}
+.contact_page{
+    width:253.75px;
+   height: 280px;
+ 
+    margin-left:35px;
+    margin-top:26.8px;
+    padding-top:15px;
+    padding-left:60px;
+    border-radius: 20%;
+    box-shadow: 7px 6px 17px 4px rgba(125, 69, 69, 0.66);
+    -webkit-box-shadow: 7px 6px 17px 4px rgba(61,46,46,0.66);
+    -moz-box-shadow: 7px 6px 17px 4px rgba(61,46,46,0.66);
+    transition:0.3s;
+    
+}
+.contact_page i{
+    color:blue;
+
+}
+
+.contact_page a{
+    margin-left:6%;
+    color:white;
+    letter-spacing: 1px;
+    transition:0.5s;
+    animation-name: triangle;
+    
+}
+@keyframes triangle{
+    from{ text-decoration:dotted ; }
+    to { text-decoration:underline;}
+}
+.contact_page a:hover{
+    color:yellow;
+    text-decoration: underline;
+    
+}
+.textarea{
+    height:50%;
+    border: none;
+    outline: none;
+    overflow-y: hidden;
+    padding-left: none;
+}
+.contact_page:hover{
+   transform:scale(1.1);
+   z-index:1;
+}
+a:active{
+    scroll-behavior: smooth;
+}
+.submit_opinion{
+    background-color: rgb(250, 250, 19);
+    width: auto;
+    font-weight:bolder;
+    color:rgb(13, 16, 49);
+    border-radius: 20%;
+    outline:none;
+    border:none;
+
+}
+#opinion{
+    width: 80%;
+    
+    outline: none;
+    border-bottom: 1px solid white;
+    margin-left: 5%;
+}
+.submit_opinion:hover{
+    outline:none;
+    border:none;
+    transform:scale(1.1);
+    
+}
+.second_heading h1{
+    padding-top:10vh;
+    padding-left: 7em;
+   
+}
+.second_heading p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-left:20%;
+}
+.container{
+    width:auto;
+    margin-left:10%;
+    background-color: rgb(13, 16, 49);
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: white;
+
+}
+
+.secondtext{
+    color: green;
+    margin-left:20%;
+}
+#callnow{
+    background-color: black;
+    color: black;
+    z-index: 5;
+}
+.com_name{
+    font-weight: bold;
+    margin-top: 2vh;
+    
+}
+.com_date{
+    color: rgba(145, 156, 150, 0.955);
+    font-size: small; 
+    
+}
+.like{
+    width:20%;
+    
+
+}
+.reply{
+    width: 20%;
+    margin-left:2%;
+    
+}
+.like:hover{
+    text-decoration: underline;
+    color:blue;
+}
+.reply:hover{
+    text-decoration: underline;
+    color:yellow;
+}
+
+.language_types{
+    margin-left:10%;
+    letter-spacing: 2px;
+   
+    
+   
+}
+.language{
+    height:4vh;
+    overflow:hidden;
+    
+    transition: 1s;
+    
+}
+.language:hover{
+   
+    height:20vh;
+}
+.login , .user_info{
+    color: white;
+    font-size: 18;
+    margin-top:2vh;
+    
+    height:4vh;
+    
+    position:relative;
+    transition:smooth 400ms;
+    
+}
+.login a:hover{
+    color: yellow;
+    text-decoration: none;
+}
+.login:hover , .user_info:hover{
+    font-size:20;
+    color:yellow;
+    transform:scale(1.1);
+    
+    
+   
+
+}
+
+
+
+.login_userinfo{
+    
+    
+    position: fixed;
+    top:70%;
+    left:70%;
+   
+}
+.login p , .user_info p{
+   display:none;
+}
+.login:hover > .login p{
+    display:none;
+}
+.user_info:hover > .user_info p{
+    display:flex;
+}
+.login_box{
+    display: block;
+    color: white;
+    top:60vh;
+    left:62em;
+    animation: 400ms smooth;
+    position: fixed;
+    font-size:14;
+    border:1px inset white;
+    padding:1%;
+    overflow: hidden;
+    z-index: -6;
+
+}
+
+
+
+.notifications{
+    position:absolute;
+    top:2vh;
+    right:2em;
+    color:white;
+    transition:0.5s;
+}
+.notifications:hover{
+    color:yellow;
+    background-color: white;
+    box-shadow: 7px 6px 17px 4px white;
+    -webkit-box-shadow: 7px 6px 17px 4px white;
+    -moz-box-shadow: 7px 6px 17px 4px white;
+}
+
+@media only screen and (max-width:800px){
+    #mainbody{
+        width:100%;
+       
+        display: inline;
+        overflow-x: hidden;
+    }
+   
+    
+   
+     
+     .first_para{
+       position:fixed;
+       width:100%;
+       height:50px;
+       z-index:5;
+       display:inline-flex;
+       
+
+        
+    }
+     .first_para img{ 
+        width:100px;
+        height:50px;
+    } 
+     .refrigerator{
+        width:100px;
+        height:50px;
+        overflow-x:hidden;
+        margin-left:15px;
+        margin-top:10px;
+        display:block;
+        overflow-y:hidden;
+        color : white;
+        transition:0.8s;
+    } 
+    .link_pages{
+        width:200px;
+        height:50px;
+        margin-left:5px;
+        margin-top:5px;
+        color:white;
+        margin-left:20px;
+        text-decoration:none;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        font-size: 18;
+        
+
+    }
+    .refrigerator:hover{
+        width:200px;
+        height:300px;
+        overflow:hidden;
+        z-index:3;
+        background-color: rgb(13, 16, 49);
+
+    }
+   
+    
+    .second_para{
+        width: 100%;
+        margin-left:1%;
+        
+        
+
+    }
+    #home{
+        height:800px;
+    }
+    #contacts{
+        height:auto;
+        padding-bottom:20px;
+    }
+    .info{
+        width: 0%;
+    }
+    .second_for_first{
+        width:800px;
+    }
+    .second_for_first img{
+        height:700px;
+        width:100%;
+        opacity:0.6;
+        
+        
+    }
+    .second_for_first p{
+        top:100px;
+        position:absolute;
+        z-index:2;
+        color:white;
+        width:180px;
+        height:auto;
+        padding-top:0px;
+        background-color:rgba(0, 0, 0, 0.56);
+        margin-left:10px;
+    }
+    .other_img{
+        position:absolute;
+        top:550px;
+    }
+    .highlights{
+        position:absolute;
+        top:270px;
+        left:-36px;
+        margin-left:0%;
+        background:rgba(0,0,0,0.8);
+        font-size:200%;
+        font-family:serif;
+        padding:10px;
+        
+    }
+    .img_com p{
+        position:absolute;
+        top:520px;
+        
+    
+    }
+    #features{
+        margin-top:40px;
+    }
+    
+    .templetes{
+        height:auto;
+    }
+
+
+
+
+        .midguard{
+            margin-left:340px;
+            display:none;
+        }
+        .main_contact1{
+            margin-left:10px;
+        }
+        .contact_page{
+            margin-left:40px;
+            padding-left:10px;
+            width:200px;
+            
+        }
+        .contact_page i{
+            color:rgb(35, 35, 96);
+            margin-left:0%;
+            width:154px;
+            
+          }
+          .info_new_class{
+            top:1940px;
+            left:10px;
+            
+            
+          }
+          body{
+            width:800px;
+            
+          }
+        
+    }   
+    
+    from here navbar
+        
+    {% load static%}
+<div class="first_para">
+    <!--<h1 class = 'logo'>SWET BHAIRAV GENERAL STORES </h1>-->
+    <img src="{% static 'media/LOGO1.png' %}" alt="No pic found">
+   
+    <div class="refrigerator">
+        <a class="link_pages" href="#home">
+            {{English.home}}
+        </a><br>
+        <a class="link_pages" href="https://www.google.com/maps/contrib/111012702169550478451/photos/@27.0531063,85.6306453,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1">
+            {{English.Location}}
+        </a><br>
+        <a class="link_pages" href="#features">
+          {{English.Befe}}
+        </a><br>
+        <a class="link_pages" href="#contacts">
+            {{English.Cont}} 
+        </a><br>
+            <button class='link_pages' name='Language' value='Language'>
+                Nepali
+            </button>
+         </div>
+
+
+
+</div>

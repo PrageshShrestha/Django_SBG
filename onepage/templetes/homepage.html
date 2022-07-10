@@ -1,0 +1,130 @@
+
+    
+    
+ {% include "head.html" %}
+{% load static %}
+ 
+<title>{{English.title}} </title>
+
+
+
+<body>
+   
+    <style>
+        {% include 'homepage.css' %}
+        
+    </style>
+
+<div id="mainbody">
+    {% include 'navbar.html' %}
+
+        
+    <div class='info_new_class'>
+        <img src="{% static 'media/location.png' %}" alt='no images found'>
+       <br>
+       <b>Find us</b>
+       <p>Durga Mandir ko pachim patti</p>
+       <p>Approximately 300m from Main Road</p>
+       <a href='https://lalbandimun.gov.np/en' class="address">Lalbandi-7,Sarlahi</a>  <br>
+       
+       <!-- <a href='#'><b>Questions? Chat with us (Click here)</b></a> -->
+       
+      
+        
+
+    </div>
+    <div class="second_para">
+       
+        
+        <div id="home" class="templetes">
+
+            <div class="midguard">{{English.Found}}<p class="info_page">{{English.found_name}}</p>
+            </div>
+            <div class="second_for_first"><img src="{% static 'media/Picture/image4.jpg' %}" alt="no image found">
+                <p>{{English.topic_sentence}}
+                    <div class='highlights'>{{English.highlight}}</div>
+                </p>
+            </div>
+            <div class="img_com">
+
+                <p>{{English.More_pics}}-></p>
+                <div class="other_img">
+                    <img src="{% static 'media/Picture/image2.jpg' %}" alt="">
+                    <img src="{% static 'media/Picture/image5.jpg' %}" alt="">
+
+                    <img src="{% static 'media/Picture/image11.jpg' %}" alt="">
+
+                    <img src="{% static 'media/Picture/image14.jpg' %}" alt="">
+                    <img src="{% static 'media/Picture/image3.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="templetes" id="features">
+            <!--<div class="second_heading">-->
+            <b>{{English.Features}}</b><br>
+            <p class="info_page">{{English.fe1}}<br>{{English.fe2}}</p>
+            <div class="container">{{English.Feature1}} <br>
+                <div class="secondtext">{{English.f1}}</div>
+            </div>
+            <div class="container">{{English.Feature2}}<br>
+                <div class="secondtext">{{English.f2}}</div>
+            </div>
+            <div class="container">{{English.Feature3}} <br>
+                <div class="secondtext">{{English.f3}}</div>
+            </div>
+            <div class="container">{{English.Feature4}}<br>
+                <div class="secondtext">{{English.f4}}</div>
+            </div>
+            <div class="container">{{English.Feature5}} <br>
+                <div class="secondtext"> {{English.f5}}</div>
+            </div>
+            <!--</div>-->
+        </div>
+       
+
+        <div class="templetes" id="contacts">
+            <div class="main_contact">
+                <div class="main_contact1">
+                    <div class="contact_page">
+                        <i class="fa-solid fa-mobile fa-10x"></i><br>
+                        <a href="tel:9844053689">{{English.number1}}</a><br>
+                        <a href="tel:9801606601">{{English.number2}}</a>
+                    </div>
+
+
+                </div>
+                <div class="main_contact1">
+                    <div class="contact_page">
+                        <i class="fa-brands fa-facebook-f fa-10x"></i><br>
+                        <a href="https://www.facebook.com/groups/323502255544113">{{English.profile}}</a>
+                    </div>
+                    <div class="contact_page">
+                        <i class="fa-solid fa-user fa-10x"></i><br>
+                        <a href="">{{English.found_name}}</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+       
+
+    </div>
+</div>
+{% include 'footer.html'%}
+</div>
+
+
+</div>
+
+</body>
+
+
+</html>    
+
+   
+

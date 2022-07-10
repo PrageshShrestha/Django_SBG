@@ -1,0 +1,254 @@
+
+{% include 'head.html' %}
+
+	<style type="text/css">
+		
+		.total{
+			height: 100vh;
+			width: 100%;
+			position: absolute;
+			background: rgb(13, 16, 49);
+			color:white;
+			font-size: 20;
+			cursor:pointer;
+		}
+		.body-forbtn{
+			height: 400px;
+			width: 800px;
+			margin-top: 60px;
+			margin-left: 250px;
+			
+              position: absolute;
+		}
+		.head{
+			margin-left: 310px;
+			margin-top: 30px;
+			box-shadow: 2px yellow;
+			display: inline-flex;
+			background: rgb(13, 16, 49);
+		}
+		.btn{
+				border: none;
+		outline: none;
+			background: transparent;
+			border: 1px inset yellow;
+			letter-spacing: 2px;
+			word-spacing: 3px;
+			font-size: 1em;
+			border-radius: 20px;
+			padding: 5px;
+            background-color: linear-gradient(red,yellow);
+            float: left;
+            background: rgb(13, 16, 49);
+            color: white;
+		}
+		.btn a{
+         text-decoration: none;
+         color: white;
+		}
+		.btn1 a{
+         text-decoration: none;
+         color:white;
+		}
+		.btn1{
+				border: none;
+		outline: none;
+			background: transparent;
+			border: 1px inset yellow;
+			letter-spacing: 2px;
+			word-spacing: 3px;
+			font-size: 1em;
+			border-radius: 20px;
+			padding: 5px;
+			
+		}
+       .log{
+       	width: 40px;
+       	height: 40px;
+       	overflow: hidden;
+        margin-top: 10px;
+        margin-left: 180px;
+        background: rgb(13, 16, 49);
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 0px;
+		transition: 0.5s;
+
+       }
+       .log:hover{
+       	width: 400px;
+       	background-color:  #99ff33;
+       	color: black;
+       	margin-right: 10px;
+       	height: 50px;
+       	border-radius: 0px;
+       	
+       	padding-top: 17px;
+       }
+       .logfor{
+       	margin-left:10em;
+       }
+       .forusand{
+       	margin-right: 100px;
+       }
+       
+       label{
+       	margin-left: 0px;
+       }
+	   .form{
+		background: rgb(13, 16, 49);
+	   }
+		.form input{
+		
+            
+            border-radius: 0px 50px 50px 0px;
+            border: 0px inset red;
+            
+            outline: none;
+			border: none;
+		}
+            		
+            		.buttonforus{
+            			margin-left:6em;
+            			margin-top: vh;
+            			padding: 5px;
+            			letter-spacing: 2px;
+            			width:20em;
+                        height:5vh;
+						font-size: 18;
+						background: yellow;
+            			font-weight: bolder;
+						color: rgb(13, 16, 49);
+            			border-radius: 10px;
+            			
+            			outline: none;
+            		}
+            		.forit{
+            			
+            			margin-top: 10px;
+            			margin-left: 200px;
+            			
+            		}
+            		.forit input{
+            			width: 20px;
+            			height: 20px;
+            			border-radius: 50%;
+            			margin-left: 0px;
+						background: rgb(13, 16, 49);
+            		}
+            		.forit #male{
+            			margin-right: 30px;
+            		}
+ .form input:active{
+	outline: none;
+}       
+#rem{
+	margin-left:5em;
+}     		
+.not_needed p{
+	margin-top:2vh;
+   margin-left:10em;
+}
+.e_login{
+	
+	border:2px inset white;
+	color: white;
+	position:absolute;
+	top:21vh;
+	left:25em;
+	z-index: 2;
+}
+.e_login i{
+	color:white;
+	
+	
+}
+.e_register{
+	position:absolute;
+	top:14vh;
+	left:45em;
+	color:white;
+	z-index:2;
+	border:2px inset white;
+	animation-duration: 1s;
+	animation-name: square;
+
+}
+@keyframes square{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity:1;
+	}
+}
+.t_facebook{
+	position:absolute;
+	top:4vh;
+	left:-10em;
+	z-index: 2;
+
+}
+.t_facebook a:hover{
+	color: yellow;
+	transform:scale(1.1);
+}
+.google{
+	margin-top:5vh;
+}
+
+	</style>
+</head>
+<body>
+	
+	<div class="extra-info">
+		<p class="e_login">Tap to login<br>Here</p>
+		<p class = 'e_register'>New person <br>Share with us </p>
+	</div>
+<div class="total">
+	<div class="body-forbtn">
+		<div class="t_facebook">
+			<div class="facebook"><a href=""><i class="fa-brands fa-facebook fa-2x"></i></a></div>
+			<div class="google"><a href=""><i class="fa-brands fa-google fa-2x"></i> </a></div>
+			<div class=""><a href=""></a></div>
+		</div>
+		<div class="head">
+			
+			<button type="button" class="btn" ><a href="login.html">Log IN</a></button>
+			<button type="button" class="btn1" ><a href="">Register</a></button>
+		
+		</div><br><br><br>
+		<form class="form" action = '' method = 'POST'>{% csrf_token %}
+		<div class="log">LOGIN
+		<input type="input" placeholder="Enter your e-mail address" class="forthesearchandaddress" name="login_email"></div>
+	
+	<div class="log">PASSWORD
+		<input type="password" placeholder="Enter the password" class="forthesearchandaddress" name = 'login_password'></div><br>
+		<div class="logfor">
+			
+			<input type="checkbox" id="rem" name="remember">Remember me <br>
+		<div class="not_needed">
+			<button class="buttonforus" type ='submit'><i class="fas fa-sign-in"></i>Login</button><br>
+			<p><a href = "#">Forgot password??</a></p>
+			
+		</div>
+		</div></form>
+		
+				<!--Male<input type="checkbox" name="male" id="male">
+
+		Female<input type="checkbox" name="female" id="female">-->
+		  <!--  <p id="hello"> hellowroldandhow are u</p>
+          <button onclick="myfunction()">hellow</button>
+        <script>
+          	function myfunction() {
+	
+
+document.getElementById("hello").innerHTML="shouldbechanged";
+}
+          </script>-->
+	
+	</div>
+</div>
+</body>
+</html>
